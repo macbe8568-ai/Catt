@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "DM Serif Display", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-sand-50: #FAF9F7;
+  --color-sand-100: #F4EFEA;
+  --color-sand-200: #EADFD4;
+  --color-sand-300: #DECEBE;
+  --color-sand-400: #CDAF95;
+  
+  --color-gold-300: #F3E5AB;
+  --color-gold-400: #E2C581;
+  --color-gold-500: #C5A059;
+  --color-gold-600: #A8813C;
+  --color-gold-700: #886227;
+  
+  --color-royal-100: #F7EAE8;
+  --color-royal-200: #EFCFCB;
+  --color-royal-500: #A64B3B;
+  --color-royal-600: #8C3527;
+  --color-royal-700: #712419;
+  --color-royal-800: #4A120B;
+  --color-royal-900: #2C0603;
+  --color-royal-950: #1C0301;
+}
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Base enhancements */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom background noise effect */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+}
+

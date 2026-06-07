@@ -1,0 +1,6 @@
+{
+  "name": "Traditional Wedding Planner & Caterers",
+  "description": "Elegant luxury wedding planning, premium traditional catering, decoration styling, and booking services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
